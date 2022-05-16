@@ -54,7 +54,7 @@ class WhiteSpacePreprocessing():
                 unpreprocessed_docs.append(self.documents[i])
                 retained_indices.append(i)
 
-        vocabulary = list(set([item for doc in preprocessed_docs for item in doc.split()]))
+        vocabulary = list(set(item for doc in preprocessed_docs for item in doc.split()))
 
         return preprocessed_docs, unpreprocessed_docs, vocabulary, retained_indices
 
@@ -124,7 +124,7 @@ class WhiteSpacePreprocessingStopwords():
                 unpreprocessed_docs.append(self.documents[i])
                 retained_indices.append(i)
 
-        vocabulary = list(set([item for doc in preprocessed_docs for item in doc.split()]))
+        vocabulary = list(set(item for doc in preprocessed_docs for item in doc.split()))
 
         return preprocessed_docs, unpreprocessed_docs, vocabulary, retained_indices
 
